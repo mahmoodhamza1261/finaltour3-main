@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=TradeGothic+LT+Extended:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 1015px) {
+    .custom-screen{
+      display: flex;
+      flex-direction: column;
+  
+    }
+   
+  }
+ .example{
+    @apply text-[color:var(--blackish-green,#121)] text-sm not-italic font-medium leading-[normal];
+    /* Montserrat/Medium/14px */
+    font-family: Montserrat;
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0px;
+  background-color: skyblue;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  color: white;
+  padding: 5px;
+}
+
+.blockmargin {
+  margin-block-start: 100px;
+}
+
+.h1 {
+  font-size: 1.9rem
+    /* 20px */
+  ;
+  line-height: 2.00rem
+    /* 28px */
+  ;
+  font-weight: 700;
+  padding-top: 6px
+}
+
+.button {
+  border: 1px solid;
+  padding: 10px;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  width: 200px;
+  background-color: rgb(242 242 242);
+}
+
+.listHead {
+  padding: 3px;
+  border: 1px solid;
+  width: 375px;
+  margin: 0px 400px 0px 400px;
+}
+
+.listItems {
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  border-right: 1px solid;
+  padding: 5px;
+}
+
+.listLastItem {
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+}
+
+.product-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-list ul li {
+  display: inline-block;
+  border: 1px solid skyblue;
+  width: 150px;
+  padding: 11px;
+
+}
+
+.product-list ul {
+  margin: 0
+}
+
+.search {
+
+  border: 1px solid skyblue;
+}
+
+.search-product-box {
+  border: 1px solid skyblue;
+  width: 400px;
+  height: 50px;
+  margin: 20px;
+  padding-left: 10px;
+
+}
+.background-svg{
+  background-color: #ee5522;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+.marginLeft-9{
+  margin-left: 9px;
+}
+
+
+
+input[type="text"],input[type="password"],
+input[type="email"],input[type="number"],
+input[type="tel"],input[type="date"],
+textarea{
+    @apply w-full border border-gray-500 my-1 py-2 px-3 rounded-2xl;
+}
+textarea{
+    height: 140px;
+}
+
+button.primary{
+    
+    @apply bg-secondarycolor p-2 w-full text-white rounded-2xl;
+}
+*{
+  font-family:Barlow ;
+}
